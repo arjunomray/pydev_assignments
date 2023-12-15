@@ -3,13 +3,14 @@
 def create_task():
     print("\nTask Created\n")
 
-def edit_task(s:str):
+def edit_task(s):
     print(f"\nEditing task : {s}\n")
 
-def desc_task(s:str):
-    print(f"\nThis is the task about: {s}\n")
+def list_task(l):
+    for i in l:
+        print(f"\nThis is the task about: {i}\n")
 
-def remove_task(s:str):
+def remove_task(s):
     print(f"\nDeleting this task: {s}\n")
 
 while True:
@@ -25,7 +26,7 @@ while True:
         continue
 
     elif choice == 3:
-        desc_task("My task")
+        list_task(["mytask1","mytask2,mytask3"])
         continue
 
     elif choice == 4:
